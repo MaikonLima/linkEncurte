@@ -1,0 +1,34 @@
+header {
+    padding: 0px;
+    text-align: center;
+    font-size: 35px;
+    color: #EEE;
+}
+footer {
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  background: #EEE;
+}
+
+.pos-header {
+
+  width: 100%;
+  line-height: 50%;
+}
+.icon-twi
+{
+    display: inline-block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 20%;
+}
+.icon-fa {
+  display: inline-block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: 0%;
+
+}

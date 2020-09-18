@@ -64,7 +64,7 @@ export default function Home() {
                 <div className="container">
                     <div className="d-flex justify-content-center py-5">
                         <div className="d-flex justify-content-center texto">
-                            <h3 className="color" style={{ fontSize:50, textAlign: 'center', color: '#9e2e3f'}}>Top 5</h3>
+                            <h3 className="color" style={{ fontSize: 50, textAlign: 'center', color: '#9e2e3f' }}>Top 5</h3>
                         </div>
                     </div>
                     <Row className="d-flex justify-content-center">
@@ -73,10 +73,10 @@ export default function Home() {
                                 <div className="ul-url" style={{ listStyle: "none" }} key={item.id}>
                                     <Row>
                                         <Col>
-                                        <a href={item.shortUrl}  style={{ fontSize: 15, color: '#9e2e3f',textDecoration:'none',fontWeight:'bold' }}>{item.shortUrl}</a>
+                                            <a href={item.shortUrl} style={{ fontSize: 15, color: '#9e2e3f', textDecoration: 'none', fontWeight: 'bold' }}>{item.shortUrl}</a>
                                         </Col>
                                         <Col xs lg={1}>
-                                        <p style={{color:'grey'}}>{item.hits}</p>
+                                            <p style={{ color: 'grey' }}>{item.hits}</p>
                                         </Col>
                                     </Row>
                                     <hr></hr>
@@ -88,7 +88,13 @@ export default function Home() {
             </div>
             <div className="container">
                 <div className="container-custom">
-                    <h1 className="text-center">HITS</h1>
+                    <h1 className="text-center" style={{ color: '#9e2e3f' }}>HITS</h1>
+                    <div className="d-flex justify-content-center">
+                        <h1 className="text-center hit">35.713.571</h1>
+                        <br></br>
+                        
+                    </div>
+                    <p className="text-center click">Cliques em links</p>
                 </div>
             </div>
             <Footer id="sticky-footer" />

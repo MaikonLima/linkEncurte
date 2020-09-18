@@ -39,7 +39,13 @@ footer {
   width: 100%;
 }
 
-
+.hit{
+    color:#9e2e3f;
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+}
 .pos-header{
  display:flex;
  min-height: 500px;

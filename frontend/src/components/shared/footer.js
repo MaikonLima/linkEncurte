@@ -14,15 +14,15 @@ class Footer extends Component {
     return (
       <div className="py-4 footer">
         <div className="container">
-          <Row className="d-flex justify-content-between">
+          <Row className="d-flex justify-content-between ml-5 mr-5">
             <Col>
-              <p className="text">chr.dc</p>
+              <h4 className="text">chr.dc</h4>
             </Col>
             <Col className="ml-2" xs={15}>
-              <AiFillTwitterCircle size={30} color="#777" />
+              <AiFillTwitterCircle size={33} color="#777" />
             </Col>
             <Col className="ml-2" xs={14}>
-              <FaFacebook size={26} color="#777" />
+              <FaFacebook size={30} color="#777" />
             </Col>
           </Row>
         </div>

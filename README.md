@@ -1,4 +1,4 @@
-#BACKEND
+### BACKEND
 
 1° Passo:
 Fazer o git clone do projeto.
@@ -12,7 +12,7 @@ Instalar o node_modules com os seguintes comandos:
     npm start.
 
 
-#FRONTEND
+### FRONTEND
 
 1° Passo:
 Fazer o git clone do projeto.
@@ -26,7 +26,7 @@ Instalar o node_modules com os seguintes comandos:
     npm start.
 
 
-#Ferraments Utilizadas</br>
+### Ferraments Utilizadas</br>
     SQLite para salvar o dados,</br>
     Reactjs no FrontEnd,</br>
     NodeJs no BackEnd.

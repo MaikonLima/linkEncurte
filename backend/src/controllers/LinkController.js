@@ -4,7 +4,7 @@ const turl =  require('turl');
 module.exports = {
     async index(request, response) {
         //const urlSave = await connection('link').select('*');
-        const res = await connection('link').select('*').orderBy('id','asc').groupBy('shortUrl');
+        const res = await connection('link').select('*').groupBy('url');
         return response.json(res);
     },
 

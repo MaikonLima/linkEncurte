@@ -26,12 +26,19 @@ footer {
 .ul-url li{
   display: inline;
   padding:100px ;
+  margin-left: 100px;
 }
 
 .ul-url .hits{
   text-align: center;
-
 }
+
+.ul-url hr{
+  padding: 0%;
+  margin:0%;
+  width: 100%;
+}
+
 
 .pos-header{
  display:flex;

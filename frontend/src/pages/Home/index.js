@@ -14,13 +14,9 @@ export default function Home() {
     async function handleLink(e) {
         e.preventDefault();
         try {
-
             const response = await api.post("links", { url });
             console.log(response);
             localStorage.setItem("setLink", url);
-            if (response) {
-                alert('Link encurtado!');
-            }
         } catch (err) {
             alert(err);
         }
@@ -64,21 +60,27 @@ export default function Home() {
                 </div>
             </form>
 
-            <div className="py-2 prefooter">
+            <div className="prefooter">
                 <div className="container">
                     <div className="d-flex justify-content-center py-5">
                         <div className="d-flex justify-content-center texto">
-                            <h3 className="color" style={{ fontSize:50, textAlign: 'center', color: '#9e2e3f',fontFamily }}>Top 5</h3>
+                            <h3 className="color" style={{ fontSize:50, textAlign: 'center', color: '#9e2e3f'}}>Top 5</h3>
                         </div>
                     </div>
                     <Row className="d-flex justify-content-center">
-                        <Col className="ml-4 py-5" xs={15}>
+                        <Col className="ml-4 py-5" xs={5}>
                             {urls.map(item => (
-                                <ul className="ul-url" style={{ listStyle: "none" }} key={item}>
-                                    <li className="mx-auto" style={{ fontSize: 19, color: '#9e2e3f' }}>{item.shortUrl}</li>
-                                    <li>{item.hits}</li>
+                                <div className="ul-url" style={{ listStyle: "none" }} key={item.id}>
+                                    <Row>
+                                        <Col>
+                                        <a href={item.shortUrl}  style={{ fontSize: 15, color: '#9e2e3f',textDecoration:'none',fontWeight:'bold' }}>{item.shortUrl}</a>
+                                        </Col>
+                                        <Col xs lg={1}>
+                                        <p style={{color:'grey'}}>{item.hits}</p>
+                                        </Col>
+                                    </Row>
                                     <hr></hr>
-                                </ul>
+                                </div>
                             ))}
                         </Col>
                     </Row>
@@ -86,7 +88,7 @@ export default function Home() {
             </div>
             <div className="container">
                 <div className="container-custom">
-                    <h1 class="text-center">HITS</h1>
+                    <h1 className="text-center">HITS</h1>
                 </div>
             </div>
             <Footer id="sticky-footer" />

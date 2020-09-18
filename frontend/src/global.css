@@ -9,7 +9,8 @@
 }
 
 body {
-    font: 400 14px Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+
     background: #EEE;
     -webkit-font-smoothing: antialiased;
 }
